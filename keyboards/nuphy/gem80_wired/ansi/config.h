@@ -1,9 +1,9 @@
 
 #pragma once
 
-#define USB_MODE                    1
-#define THREE_MODE                  0
-#define WORK_MODE                   USB_MODE
+#define USB_MODE                    0
+#define THREE_MODE                  1
+#define WORK_MODE                   THREE_MODE
 #define TAP_CODE_DELAY              8
 #define DYNAMIC_KEYMAP_MACRO_DELAY  8
 #define EECONFIG_USER_DATA_SIZE  	12
@@ -28,9 +28,10 @@
 #define SD1_TX_PAL_MODE          	0
 #define SD1_RX_PIN               	B7
 #define SD1_RX_PAL_MODE          	0
-#define RGB_MATRIX_DEFAULT_MODE     RGB_MATRIX_CUSTOM_position_mode
-#define RGB_DEFAULT_COLOUR          168
-#define RGB_DISABLE_WHEN_USB_SUSPENDED
-#define DEBOUNCE 10
+#define RGB_MATRIX_DEFAULT_MODE     RGB_MATRIX_CYCLE_LEFT_RIGHT
+#define RGB_DEFAULT_COLOUR          512
+#undef RGBLIGHT_DEFAULT_MODE
+#define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
+
 
 
