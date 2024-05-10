@@ -35,6 +35,8 @@
 #define ENABLE_RGB_MATRIX_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
-#define RGB_DISABLE_WHEN_USB_SUSPENDED false
+#undef RGB_DISABLE_WHEN_USB_SUSPENDED
+#undef RGBLIGHT_SLEEP  // enable rgblight_suspend() and rgblight_wakeup() in keymap.c
+#define RGBLIGHT_TIMEOUT 9000000000  // ms to wait until rgblight time out, 900K ms is 15min.
 
 
